@@ -1,5 +1,5 @@
-print(str.replace('%website%','https://dvmn.org/referrals/trr8ewBBmwwHwghTVxFXK7WOTQc1kDT8W6SbPhA1'[',maxcount']))
-print("""Привет, %friend_name%! %my_name% приглашает вас на сайт %website%!
+txt='''Привет, %friend_name%! %my_name% приглашает вас на сайт %website%!
+
 %website% — это новая версия онлайн-курса по программированию.
 Изучаем Python и не только. Решаем задачу. Получаем отзывы от преподавателей.
 
@@ -13,5 +13,6 @@ print("""Привет, %friend_name%! %my_name% приглашает вас на
 Все проекты — они же решения наших задач — можно ссылаться на твоём GitHub. Работодатели такое оценят.
 
 Регистрируйся → %website%  
-На курсы, которые еще не вышли, можно подписаться и получить о релизе сразу на имейл.
-""")
+На курсы, которые еще не вышли, можно подписаться и получить о релизе сразу на имейл.''' 
+x=txt.replace('%website%','https://dvmn.org/referrals/trr8ewBBmwwHwghTVxFXK7WOTQc1kDT8W6SbPhA1').replace(' %friend_name%','Игорь').replace('%my_name%','Илья')
+print(x)
