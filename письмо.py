@@ -9,7 +9,6 @@ login2 = os.getenv('login2')
 server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
 
 server.login(login, password)
-server.login2(login2)
 letter = '''\
 From: devmanorg@yandex.ru
 To: trosnek@yandex.by
